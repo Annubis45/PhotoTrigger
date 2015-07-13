@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <CheckBox
+                        android:id="@+id/Shutter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="Focus"
+                        android:text="@string/focus" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.85"
+                        android:onClick="Shutter"
+                        android:text="@string/shutter" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/Photo"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.90"
+                    android:adjustViewBounds="true"
+                    android:onClick="Photo"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/camera_icon" />
+
+                <ImageButton
+                    android:id="@+id/Reset"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.05"
+                    android:adjustViewBounds="true"
+                    android:onClick="Reset"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/refresh_icon"
+                    android:text="@string/reset_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" 
+                android:focusable="true"
+				android:focusableInTouchMode="true" >
+				<requestFocus />
+                <SeekBar
+                    android:id="@+id/seekBar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.46"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:progress="0"
+                    android:thumb="@drawable/thumb_big64" />
+                     
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tempo"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <CheckBox
+                android:id="@+id/refocus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:defaultValue="true"
+                android:text="@string/refocus" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="@string/tempo2" />
+
+                <Button
+                    android:id="@+id/Send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Send"
+                    android:text="@string/send_button" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/btdevice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="PhotoTriggerBT" />
+
+                <Button
+                    android:id="@+id/connect"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="Connect"
+                    android:text="Connecter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ScrollView
+                    android:id="@+id/scrollView1"
+                    android:layout_width="258dp"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/Console"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Small Text"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/clear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:onClick="Clear"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/bin_red_icon" />
+
+                    <ImageButton
+                        android:id="@+id/refresh"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:adjustViewBounds="true"
+                        android:onClick="Refresh"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/refresh_icon_bt" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

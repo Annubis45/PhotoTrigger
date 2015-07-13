@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Bienvenue sur PhotoTrigger by Annubis45!</string>
+    <string name="app_name">PhotoTrigger</string>
+    <string name="send_button">Envoyer</string>
+    <string name="reset_button">Reset</string>
+    <string name="focus">Focus</string>
+    <string name="shutter">Shutter</string>
+    <string name="tempo">Temporisation (secondes):</string>
+    <string name="tempo2">60</string>
+    <string name="refocus">Focus à chaque photo?</string>
+    <string name="photo">Photo</string>
+
+</resources>
