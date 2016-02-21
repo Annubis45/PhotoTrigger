@@ -3,10 +3,10 @@
  */
 #include <SoftwareSerial.h>
 
-SoftwareSerial mySerial(12, 11); // RX, TX
+SoftwareSerial mySerial(10, 9); // RX, TX
 
-int pinoptoFocus=8;
-int pinoptoShutter=5;
+int pinoptoFocus=13;
+int pinoptoShutter=12;
 
 boolean timelapsmode;
 boolean refocus;
