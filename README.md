@@ -7,6 +7,7 @@
 * [BT Module](#module)
   * [Schematic](#module-schematics)
   * [Binary](#module-binary)
+  * [Protocol](#protocol)
 * [Android Application](#android)
 * [Improvements](#improvements)
 * [License](#license)
@@ -15,6 +16,7 @@
 ## Intro
 
 Making a reflex camera controlable by an android application.
+It controls the focus and the shutter of the camera.
 
 ## Usage
 
@@ -33,6 +35,19 @@ Making a reflex camera controlable by an android application.
 ### Module Binary
 
 The code of the arduino is in the arduino folder
+
+### Protocol
+
+The BT module recieve string commands:
+* F: activate the focus
+* f: desactivate the focus
+* S: activate the shutter
+* s: desactivate the shutter
+* P: take a photo with 1 sec for the focus
+* P + integer: take a photo waitig for X sec for the focus
+* R : reset all
+* fs or sf: desactivate Focus and Shutter
+* A + integer: set on the timelaps mode and take a photo every X sec.
 
 ## Android Application
 
