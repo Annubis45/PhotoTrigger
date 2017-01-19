@@ -3,6 +3,7 @@
 ## Table of contents
 
 * [Intro](#intro)
+* [Usage](#usage)
 * [BT Module](#module)
   * [Schematic](#module-schematics)
   * [Binary](#module-binary)
@@ -14,6 +15,15 @@
 ## Intro
 
 Making a reflex camera controlable by an android application.
+
+## Usage
+
+ 1. Connect the module to the camera and put it on.
+ 2. Connect your phone to the bt module via BT 
+   * name: PhotoTriggerBT 
+   * pass: 1342
+ 3. Use the application to control the camera.
+
 
 ## BT Module
 
